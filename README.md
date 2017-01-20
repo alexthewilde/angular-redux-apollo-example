@@ -1,4 +1,16 @@
-# Zoo
+# Angular Redux Apollo example
+
+A working integration of an Apollo client store with an existing Redux store 
+([ng2-redux](https://github.com/angular-redux/ng2-redux)). Preconfigured to 
+pull from a public GraphQL endpoint with sample data.
+
+Run `ng serve` and navigate to `http://localhost:4200/`. Then open 
+[Redux DevTools](https://github.com/gaearon/redux-devtools) to inspect the store
+state: the `apollo` state should show up alongside `elephants` and `lions`.
+
+Original code adapted from [example-app](https://github.com/angular-redux/example-app/).
+
+---
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
