@@ -1,0 +1,29 @@
+header {
+	padding: .1rem;
+}
+.flexbox-container{
+	display: flex;
+}
+
+.sidebar{
+	order: 1;
+	flex: 1;
+  flex-basis: auto;
+  padding: 1rem;
+  min-height: 666px;
+}
+
+.main{
+	order: 1;
+	flex: 5;
+  padding: .5rem;
+}
+
+.box1, .box2 {
+  min-height: 100%;
+	padding: 1em;
+}
+
+.highlight {
+  background-color: lightyellow;
+}
