@@ -40,6 +40,14 @@ export class AppComponent {
       apollo: client.reducer() as any,
     });
 
+    let enhancers = [
+      applyMiddleware(client.middleware()),
+    ];
+
+    if (devTools.isEnabled()) {
+      enhancers.push(devTools.enhancer());
+    }
+
     ngRedux.configureStore(
       rootReducer,
       {},
@@ -47,10 +55,8 @@ export class AppComponent {
         createEpicMiddleware(combineEpics(...elephantsEpics.epics)),
         createEpicMiddleware(combineEpics(...lionsEpics.epics)),
       ],
-      [
-        applyMiddleware(client.middleware()),
-        devTools.isEnabled() ? devTools.enhancer() : null
-      ]
+      // Enhancers
+      enhancers
     );
   }
 
