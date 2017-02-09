@@ -13,6 +13,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-redux/store": "^6.0.0",
     "@angular/common": "^2.3.1",
     "@angular/compiler": "^2.3.1",
     "@angular/core": "^2.3.1",
@@ -25,7 +26,6 @@
     "apollo-client": "^0.7.3",
     "core-js": "^2.4.1",
     "graphql-tag": "^1.2.3",
-    "ng2-redux": "^5.1.0",
     "redux": "^3.6.0",
     "redux-observable": "^0.12.2",
     "rxjs": "^5.0.1",

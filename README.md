@@ -1,7 +1,7 @@
 # Angular Redux Apollo example
 
 A working integration of an Apollo client store with an existing Redux store 
-([ng2-redux](https://github.com/angular-redux/ng2-redux)). Preconfigured to 
+([@angular-redux/store](https://github.com/angular-redux/store)). Preconfigured to 
 pull from a public GraphQL endpoint with sample data.
 
 Run `ng serve` and navigate to `http://localhost:4200/`. Then open 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { NgRedux, DevToolsExtension } from 'ng2-redux';
+import { NgRedux, DevToolsExtension } from '@angular-redux/store';
 import { Action, combineReducers, applyMiddleware, ReducersMapObject } from 'redux';
 import { createEpicMiddleware, combineEpics } from 'redux-observable';
 
