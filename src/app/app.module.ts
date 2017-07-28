@@ -13,6 +13,7 @@ import { ElephantsModule } from './elephants/elephants.module';
 import { LionsModule } from './lions/lions.module';
 
 import { provideClient } from './apollo-client-store';
+import { CitiesModule } from './cities/cities.module';
 
 @NgModule({
   declarations: [ AppComponent ],
@@ -23,6 +24,7 @@ import { provideClient } from './apollo-client-store';
     NgReduxModule,
     ElephantsModule,
     LionsModule,
+    CitiesModule,
     ApolloModule.withClient(provideClient),
   ],
   providers: [ AppActions ],
