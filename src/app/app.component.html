@@ -15,13 +15,9 @@
   <nav class="sidebar">
     <p>Local state from angular-redux store:</p>
     <app-elephant-list></app-elephant-list>
-    <app-lion-list></app-lion-list> 
+    <app-lion-list></app-lion-list>
   </nav>
   <article class="main">
-    <p>Pulled from a remote GraphQL endpoint via Apollo client:</p>
-    <h2>World Cities</h2>
-    <ul>
-      <li *ngFor="let city of cities$ | async">{{city.name}}, {{city.country}}</li>
-    </ul>
-  </article>  
+    <app-cities-list></app-cities-list>
+  </article>
 </div>
